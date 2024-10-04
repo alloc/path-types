@@ -1,13 +1,21 @@
 {
   "name": "@alloc/path-types",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript utility types for URL pathnames",
   "license": "MIT",
   "files": [
     "index.js",
     "index.d.ts"
   ],
-  "keywords": ["url", "path", "pathname", "typescript", "infer", "parameters", "params"],
+  "keywords": [
+    "url",
+    "path",
+    "pathname",
+    "typescript",
+    "infer",
+    "parameters",
+    "params"
+  ],
   "author": "Alec Larson",
   "repository": {
     "type": "git",
