@@ -5,7 +5,9 @@ export type InferParams<
   P extends string,
   Value = string
 > = InferParamFromPath<P> extends ParamNames<infer Required, infer Optional>
-  ? Simplify<{ [K in Required]: Value } & { [K in Optional]?: Value }>
+  ? Required | Optional extends never
+    ? Record<string, never>
+    : Simplify<{ [K in Required]: Value } & { [K in Optional]?: Value }>
   : never
 
 /** Convert a route path literal to a template type. */
